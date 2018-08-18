@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+         http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>maple</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error/error_404.jsp</location>
+	</error-page>
+	
+	<!-- Dictionary Type Module -->
+	<servlet>
+		<servlet-name>dictionaryTypeList</servlet-name>
+		<servlet-class>com.noesis_maplesoft.peopleware.setting.dictionary.web.controller.DicTypeListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dictionaryTypeList</servlet-name>
+		<url-pattern>/settings/dictionary/type/list.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>dictionaryTypeCreate</servlet-name>
+		<servlet-class>com.noesis_maplesoft.peopleware.setting.dictionary.web.controller.DicTypeCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dictionaryTypeCreate</servlet-name>
+		<url-pattern>/settings/dictionary/type/create.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>dictionaryTypeEdit</servlet-name>
+		<servlet-class>com.noesis_maplesoft.peopleware.setting.dictionary.web.controller.DicTypeEditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dictionaryTypeEdit</servlet-name>
+		<url-pattern>/settings/dictionary/type/edit.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>dictionaryTypeUpdate</servlet-name>
+		<servlet-class>com.noesis_maplesoft.peopleware.setting.dictionary.web.controller.DicTypeUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dictionaryTypeUpdate</servlet-name>
+		<url-pattern>/settings/dictionary/type/update.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>dictionaryTypeDelete</servlet-name>
+		<servlet-class>com.noesis_maplesoft.peopleware.setting.dictionary.web.controller.DicTypeDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dictionaryTypeDelete</servlet-name>
+		<url-pattern>/settings/dictionary/type/delete.do</url-pattern>
+	</servlet-mapping>
+	<!-- Dictionary Value Module -->
+	<servlet>
+		<servlet-name>dictionaryValueList</servlet-name>
+		<servlet-class>com.noesis_maplesoft.peopleware.setting.dictionary.web.controller.DicValueListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dictionaryValueList</servlet-name>
+		<url-pattern>/settings/dictionary/value/list.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>dictionaryValueCreate</servlet-name>
+		<servlet-class>com.noesis_maplesoft.peopleware.setting.dictionary.web.controller.DicValueCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dictionaryValueCreate</servlet-name>
+		<url-pattern>/settings/dictionary/value/create.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>dictionaryValueSave</servlet-name>
+		<servlet-class>com.noesis_maplesoft.peopleware.setting.dictionary.web.controller.DicValueSaveController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dictionaryValueSave</servlet-name>
+		<url-pattern>/settings/dictionary/value/save.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>dictionaryValueEdit</servlet-name>
+		<servlet-class>com.noesis_maplesoft.peopleware.setting.dictionary.web.controller.DicValueEditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dictionaryValueEdit</servlet-name>
+		<url-pattern>/settings/dictionary/value/edit.do</url-pattern>
+	</servlet-mapping>
+</web-app>
